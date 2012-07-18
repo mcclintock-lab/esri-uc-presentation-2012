@@ -1,0 +1,100 @@
+@import 'mixins.less';
+
+.reveal {
+  h1 img {
+    border:none;
+    background:none;
+    .box-shadow(none);
+    width:800px;
+  }
+
+  .studyRegion {
+
+    img {
+      border:none;
+      background:transparent;
+      .box-shadow(none);
+      height:100%;
+      position:absolute;
+      right:0px;
+      top:0px;
+    }
+
+    p {
+      position:absolute;
+      width:200px;
+      text-align:center;
+      font-size:26px;
+
+      span {
+        display:block;
+        font-size:.6em;
+        margin-top:-10px;
+      }
+    }
+
+    p.northcoast {
+      top:80px;
+      left:160px;
+    }
+
+    p.southcoast {
+      bottom:0px;
+      right:350px;
+    }
+
+    p.centralcoast {
+      bottom:120px;
+      right:420px;
+    }
+
+    p.northcentralcoast {
+      width:250px;
+      bottom:270px;
+      right:500px;
+    }
+
+    p.mlpa {
+      width:270px;
+      bottom:0;
+      left:0;
+      border:1px solid white;
+    }
+  }
+
+}
+
+p.mlpa {
+  .opacity(0);
+  .transition(-webkit-opacity 1000ms ease-in 800ms);
+}
+
+
+.mlpa .studyRegion p.mlpa {
+  .opacity(100);
+}
+
+.fullscreen-image {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  .opacity(0);
+  background-position:center;
+  background-size:100% auto;
+  .transition(-webkit-opacity 800ms ease);
+}
+
+.on-stage .fullscreen-image {
+  background: url(../images/on-stage.jpg) no-repeat;
+}
+
+.imgBg .fullscreen-image {
+  .opacity(100);
+}
+
+.mlpa .state-background {
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(10,45,76,1)), color-stop(100%,rgba(28,30,32,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, lighten(desaturate(rgba(10,45,76,1), 20%), 10%) 0%, darken(rgba(10,45,76,1), 10%) 100%);
+}
