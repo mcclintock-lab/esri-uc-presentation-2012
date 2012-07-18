@@ -1,0 +1,120 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.reveal h1 img {
+  border: none;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 800px;
+}
+.reveal .studyRegion img {
+  border: none;
+  background: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.reveal .studyRegion p {
+  position: absolute;
+  width: 200px;
+  text-align: center;
+  font-size: 26px;
+}
+.reveal .studyRegion p span {
+  display: block;
+  font-size: .6em;
+  margin-top: -10px;
+}
+.reveal .studyRegion p.northcoast {
+  top: 80px;
+  left: 160px;
+}
+.reveal .studyRegion p.southcoast {
+  bottom: 0px;
+  right: 350px;
+}
+.reveal .studyRegion p.centralcoast {
+  bottom: 120px;
+  right: 420px;
+}
+.reveal .studyRegion p.northcentralcoast {
+  width: 250px;
+  bottom: 270px;
+  right: 500px;
+}
+.reveal .studyRegion p.mlpa {
+  width: 270px;
+  bottom: 0;
+  left: 0;
+  border: 1px solid white;
+}
+p.mlpa {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: -webkit-opacity 1000ms ease-in 800ms;
+  -moz-transition: -webkit-opacity 1000ms ease-in 800ms;
+  -ms-transition: -webkit-opacity 1000ms ease-in 800ms;
+  -o-transition: -webkit-opacity 1000ms ease-in 800ms;
+  transition: -webkit-opacity 1000ms ease-in 800ms;
+}
+.mlpa .studyRegion p.mlpa {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.fullscreen-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background-position: center;
+  background-size: 100% auto;
+  -webkit-transition: -webkit-opacity 800ms ease;
+  -moz-transition: -webkit-opacity 800ms ease;
+  -ms-transition: -webkit-opacity 800ms ease;
+  -o-transition: -webkit-opacity 800ms ease;
+  transition: -webkit-opacity 800ms ease;
+}
+.on-stage .fullscreen-image {
+  background: url(../images/on-stage.jpg) no-repeat;
+}
+.imgBg .fullscreen-image {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.mlpa .state-background {
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #0a2d4c), color-stop(100%, #1c1e20));
+  background: -webkit-radial-gradient(center, ellipse cover, #1e476b 0%, #04121f 100%);
+}

@@ -16,6 +16,7 @@
 		
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/presentation.css">
 		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
 
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -27,33 +28,45 @@
 
 			<!-- Used to fade in a background when a specific slide state is reached -->
 			<div class="state-background"></div>
+			<div class="fullscreen-image"></div>
 			
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3 class="inverted">CSS 3D Presentations</h3>
+					<h1><img src="./images/logo.png"></h1>
+					<h3>Ocean GeoDesign using Real-time Web Technologies</h3>
+					<p>Chad Burt</p>
+					<p>University of California Santa Barbara</p>
 					<script>
 						// Delicously hacky. Look away.
 						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
 					</script>
 				</section>
 				
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is an easy to use, HTML based, presentation tool. You'll need a modern browser with 
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-					<p>
-						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
-					</aside>
-				</section>
+				<section data-state="imgBg on-stage">
+ 				</section>
 				
+				<section data-state="mlpa" class="mlpa">
+					<section class="studyRegion">
+						<img src="images/study-regions.png">
+						<p class="northcoast">North Coast<span>2010</span></p>
+						<p class="southcoast">South Coast<span>2009</span></p>
+						<p class="centralcoast">Central Coast<span>2005-2007</span></p>
+						<p class="northcentralcoast">North-Central Coast<span>2008</span></p>
+						<p class="mlpa">Marine Life Protection Act Initiative Study Regions</p>
+	 				</section>
+	 				<section class="stakeholders">
+	 				</section>
+	 				<section class="tools">
+	 				</section>
+	 				<section class="screencast">
+	 					<iframe src="http://player.vimeo.com/video/15701001" width="500" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/15701001">MarineMap in 5 Minutes</a></p>
+	 				</section>
+	 				<section>
+	 					<iframe width="940" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.arcgis.com/home/webmap/embedViewer.html?webmap=3dd5347d1a16479885dbcdbc275f7bab&amp;extent=-126.0907,31.4847,-115.2582,37.6488"></iframe><br /><a href="http://www.arcgis.com/home/webmap/viewer.html?webmap=3dd5347d1a16479885dbcdbc275f7bab&amp;extent=-126.0907,31.4847,-115.2582,37.6488" target="_blank">129 MPA's Created (16% State Waters)</a>
+	 				</section>
+				</section>
+
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
