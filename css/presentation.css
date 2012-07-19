@@ -260,3 +260,22 @@ p.geodesign::before {
   left: 500px;
   top: 330px;
 }
+.reveal .when img {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  position: absolute;
+  width: 1020px;
+  left: -60px;
+  -webkit-transition: top 800ms ease 500ms;
+  -moz-transition: top 800ms ease 500ms;
+  -ms-transition: top 800ms ease 500ms;
+  -o-transition: top 800ms ease 500ms;
+  transition: top 800ms ease 500ms;
+  top: 2000px;
+}
+.icanhaz .when img {
+  top: 60px;
+}
