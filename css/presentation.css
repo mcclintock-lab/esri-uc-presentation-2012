@@ -81,13 +81,13 @@
 p.mlpa {
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transition: -webkit-opacity 1000ms ease-in 800ms;
-  -moz-transition: -webkit-opacity 1000ms ease-in 800ms;
-  -ms-transition: -webkit-opacity 1000ms ease-in 800ms;
-  -o-transition: -webkit-opacity 1000ms ease-in 800ms;
-  transition: -webkit-opacity 1000ms ease-in 800ms;
+  -webkit-transition: opacity 1000ms ease-in 800ms;
+  -moz-transition: opacity 1000ms ease-in 800ms;
+  -ms-transition: opacity 1000ms ease-in 800ms;
+  -o-transition: opacity 1000ms ease-in 800ms;
+  transition: opacity 1000ms ease-in 800ms;
 }
-.mlpa .studyRegion p.mlpa {
+.studyRegion .studyRegion p.mlpa {
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -101,11 +101,11 @@ p.mlpa {
   filter: alpha(opacity=0);
   background-position: center;
   background-size: 100% auto;
-  -webkit-transition: -webkit-opacity 800ms ease;
-  -moz-transition: -webkit-opacity 800ms ease;
-  -ms-transition: -webkit-opacity 800ms ease;
-  -o-transition: -webkit-opacity 800ms ease;
-  transition: -webkit-opacity 800ms ease;
+  -webkit-transition: opacity 800ms ease;
+  -moz-transition: opacity 800ms ease;
+  -ms-transition: opacity 800ms ease;
+  -o-transition: opacity 800ms ease;
+  transition: opacity 800ms ease;
 }
 .on-stage .fullscreen-image {
   background: url(../images/on-stage.jpg) no-repeat;
