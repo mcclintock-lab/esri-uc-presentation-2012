@@ -15,5 +15,7 @@
 ## Step 3 - Publish using github pages
 
 * git checkout --orphan gh-pages
+* git commit -a -m 'Publishing presentation'
 * git push origin gh-pages
 
+Now (maybe in 10 minutes) it will be available at username.github.com/projectname
